@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektro Kadlec Prachatice, Vimperk</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --zluta: #fbd304;
+            --cerna: #0d0d0d;
+            --bila: #f5f3ee;
+            --seda: #e8e5de;
+            --text: #1a1a1a;
+            --text-light: #555;
+            --radius: 4px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Barlow', sans-serif;
+            background: var(--bila);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* ── HLAVIČKA ── */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--cerna);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 32px;
+            height: 64px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+        }
+
+        .logo {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 22px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--bila);
+            line-height: 1;
+        }
+        .logo span { color: var(--zluta); }
+
+        .header-nav { display: flex; align-items: center; gap: 8px; }
+
+        .nav-pobocka {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 14px;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius);
+            text-decoration: none;
+            color: #aaa;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.2s;
+            line-height: 1.3;
+        }
+        .nav-pobocka strong { color: var(--bila); font-size: 13px; letter-spacing: 0.05em; }
+        .nav-pobocka:hover { border-color: var(--zluta); color: var(--zluta); background: rgba(251,211,4,0.06); }
+        .nav-pobocka:hover strong { color: var(--zluta); }
+
+        .btn-letak-nav {
+            margin-left: 12px;
+            background: var(--zluta);
+            color: var(--cerna);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .btn-letak-nav:hover { background: #fff; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(251,211,4,0.4); }
+
+        /* ── CTA PÁSKA ── */
+        .cta-bar {
+            background: var(--zluta);
+            padding: 28px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-bar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -60px; right: -60px; bottom: 0;
+            background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(0,0,0,0.04) 20px, rgba(0,0,0,0.04) 40px);
+        }
+        .cta-bar-inner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .cta-tagline {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: clamp(18px, 3vw, 26px);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--cerna);
+        }
+        .btn-hlavni {
+            background: var(--cerna);
+            color: var(--zluta);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 14px 36px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.25s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-hlavni svg { flex-shrink: 0; }
+        .btn-hlavni:hover { background: #1a1a1a; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+
+        /* ── SEKCE SLUŽEB ── */
+        .sluzby-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 56px 24px;
+        }
+
+        .sekce-nadpis {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: clamp(28px, 5vw, 42px);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--cerna);
+            margin-bottom: 8px;
+        }
+        .sekce-nadpis span { color: var(--zluta); background: var(--cerna); padding: 0 6px; }
+
+        .sekce-podnadpis {
+            color: var(--text-light);
+            font-size: 16px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        /* Dvousloupcový layout */
+        .sluzby-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* Levý sloupec */
+        .sluzby-leva { display: flex; flex-direction: column; }
+
+        /* Pravý sloupec – obrázek */
+        .sluzby-obrazek {
+            position: sticky;
+            top: 80px;
+            align-self: start;
+        }
+        .sluzby-obrazek img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+
+        /* Karta služby */
+        .sluzba-karta {
+            background: #fff;
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            border-left: 4px solid transparent;
+            border-bottom: 1px solid var(--seda);
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .sluzba-karta:first-child { border-radius: 6px 6px 0 0; border-top: 1px solid var(--seda); }
+        .sluzba-karta:hover { border-left-color: var(--zluta); background: #fffef0; padding-left: 24px; }
+        .sluzba-karta.aktivni { border-left-color: var(--zluta); background: #fffef0; padding-left: 24px; }
+
+        .sluzba-ikona { font-size: 26px; flex-shrink: 0; }
+        .sluzba-texty { flex: 1; }
+        .sluzba-nazev {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--cerna);
+            margin-bottom: 2px;
+        }
+        .sluzba-popis-kratky { font-size: 13px; color: var(--text-light); line-height: 1.4; }
+        .sluzba-sipka {
+            font-size: 20px;
+            color: #bbb;
+            transition: transform 0.2s, color 0.2s;
+            flex-shrink: 0;
+            font-style: normal;
+        }
+        .sluzba-karta.aktivni .sluzba-sipka { transform: rotate(90deg); color: var(--cerna); }
+
+        /* Detail – rozbaluje se pod posledním tlačítkem */
+        .detail-sluzby {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1);
+            background: var(--cerna);
+            border-radius: 0 0 6px 6px;
+        }
+        .detail-sluzby.otevreno { max-height: 600px; }
+
+        .detail-vnitrni { padding: 28px 24px; }
+        .detail-text h3 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--zluta);
+            margin-bottom: 14px;
+        }
+        .detail-text p { font-size: 14px; line-height: 1.85; color: #ccc; margin-bottom: 10px; }
+        .detail-text p:last-child { margin-bottom: 0; }
+        .detail-text a { color: var(--zluta); }
+
+        /* ── O NÁS ── */
+        .onas-section { background: var(--cerna); padding: 64px 24px 0; }
+        .onas-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .onas-text .sekce-nadpis { color: var(--bila); }
+        .onas-text .sekce-nadpis span { color: var(--cerna); background: var(--zluta); }
+        .onas-text .sekce-podnadpis { color: #888; }
+        .onas-text p { color: #bbb; font-size: 15px; line-height: 1.9; margin-bottom: 16px; }
+        .onas-badge {
+            display: inline-block;
+            background: var(--zluta);
+            color: var(--cerna);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border-radius: var(--radius);
+            margin-top: 8px;
+        }
+        .onas-foto { position: relative; }
+        .onas-foto::before {
+            content: '';
+            position: absolute;
+            top: -8px; left: -8px; right: 8px; bottom: 8px;
+            border: 2px solid var(--zluta);
+            border-radius: 4px;
+            z-index: 0;
+        }
+        .onas-foto img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+            filter: grayscale(20%);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ── KONTAKT ── */
+        .kontakt-section { padding: 64px 24px 0; max-width: 1100px; margin: 0 auto; }
+        .pobocky-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+        .pobocka-karta { background: var(--cerna); border-radius: 8px; overflow: hidden; }
+        .pobocka-header {
+            background: var(--zluta);
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .pobocka-nazev {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--cerna);
+        }
+        .pobocka-body { padding: 24px; }
+        .pobocka-info {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .pobocka-info-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+        .pobocka-info strong { color: var(--bila); display: block; font-size: 13px; margin-bottom: 2px; }
+        .btn-email-pobocka {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(251,211,4,0.1);
+            border: 1px solid rgba(251,211,4,0.3);
+            color: var(--zluta);
+            text-decoration: none;
+            padding: 12px 16px;
+            border-radius: var(--radius);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            transition: all 0.2s;
+            margin-top: 8px;
+            word-break: break-all;
+        }
+        .btn-email-pobocka:hover { background: rgba(251,211,4,0.2); border-color: var(--zluta); }
+        .btn-mapa {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--cerna);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+        .btn-mapa:hover { opacity: 1; }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #080808;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .footer-logo {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 18px;
+            color: #444;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .footer-logo span { color: var(--zluta); }
+        .footer-copy { color: #444; font-size: 12px; }
+
+        /* ── MODAL LETÁK ── */
+        #modalLetak {
+            position: fixed;
+            inset: 0;
+            z-index: 9000;
+            background: rgba(0,0,0,0.97);
+            overflow-y: auto;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+        }
+        #modalLetak.otevreno { opacity: 1; visibility: visible; }
+
+        .modal-hlavicka {
+            position: sticky;
+            top: 0;
+            z-index: 9001;
+            background: var(--cerna);
+            border-bottom: 2px solid var(--zluta);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .modal-titulek {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--bila);
+        }
+        .modal-titulek span { color: var(--zluta); }
+        .modal-zavreni { display: flex; align-items: center; gap: 16px; }
+        .btn-modal-kontakt {
+            background: var(--zluta);
+            color: var(--cerna);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 8px 18px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-modal-kontakt:hover { background: #fff; }
+        .btn-zavrit-x {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            border: 1px solid #444;
+            background: none;
+            color: #aaa;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .btn-zavrit-x:hover { background: #333; color: #fff; border-color: #666; }
+
+        .modal-obsah {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 16px;
+            transform: translateY(20px);
+            transition: transform 0.4s cubic-bezier(0.25,0.8,0.25,1);
+        }
+        #modalLetak.otevreno .modal-obsah { transform: translateY(0); }
+
+        .letak-stranky { display: flex; flex-direction: column; gap: 3px; }
+        .letak-stranka { position: relative; }
+        .letak-cislo {
+            position: absolute;
+            top: 12px; left: 12px;
+            background: var(--zluta);
+            color: var(--cerna);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 2px;
+            z-index: 1;
+        }
+        .letak-stranka img { width: 100%; height: auto; display: block; border-radius: 4px; }
+
+        .modal-kontakt-bar {
+            margin: 40px 0 0;
+        }
+        .modal-kontakt-bar h2 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--bila);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .kontakt-tlacitka {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .btn-email-modal {
+            background: var(--cerna);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.2s;
+        }
+        .btn-email-modal:hover { border-color: var(--zluta); }
+        .btn-email-modal-header {
+            background: var(--zluta);
+            padding: 11px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .btn-email-modal-nazev {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--cerna);
+        }
+        .btn-email-modal-hint {
+            font-size: 11px;
+            font-weight: 600;
+            color: rgba(0,0,0,0.45);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .btn-email-modal-body {
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--zluta);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            word-break: break-all;
+        }
+        .btn-email-modal-body svg { flex-shrink: 0; }
+        .btn-zavrit-modal {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #888;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 11px 28px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.2s;
+            display: block;
+            width: 100%;
+        }
+        .btn-zavrit-modal:hover { border-color: #666; color: #ccc; }
+
+        /* ── LOGO ODKAZ ── */
+        a.logo { text-decoration: none; cursor: default; }
+        a.logo:hover { opacity: 1; }
+
+        /* ── KONTAKTNÍ CLUSTER (nad kartami) ── */
+        .kontakt-cluster {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .kcluster-karta {
+            background: var(--cerna);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .kcluster-header {
+            background: var(--zluta);
+            padding: 11px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+        .kcluster-nazev {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--cerna);
+        }
+        .kcluster-body {
+            padding: 13px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+        }
+        .kcluster-doba {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            color: #999;
+            font-size: 12.5px;
+            line-height: 1.55;
+        }
+        .kcluster-doba-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+        .kcluster-doba strong { color: var(--bila); display: block; font-size: 11px; margin-bottom: 2px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+        .kcluster-akce {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .cluster-btn-letak {
+            background: var(--zluta);
+            color: var(--cerna);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 7px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.18s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            text-decoration: none;
+            white-space: nowrap;
+            width: 100%;
+        }
+        .cluster-btn-letak:hover { background: #fff; transform: translateY(-1px); }
+        .cluster-btn-mail {
+            background: rgba(251,211,4,0.08);
+            color: var(--zluta);
+            border: 1px solid rgba(251,211,4,0.2);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 7px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: all 0.18s;
+            letter-spacing: 0.03em;
+        }
+        .cluster-btn-mail:hover { background: rgba(251,211,4,0.15); border-color: rgba(251,211,4,0.4); }
+        .btn-mapa-cluster {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: #666;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            transition: color 0.18s;
+            padding: 2px 0;
+        }
+        .btn-mapa-cluster:hover { color: var(--zluta); }
+
+        /* ── ČASOVÁ OSA (full-width pod onas-inner) ── */
+        .onas-timeline-wrap {
+            max-width: 1100px;
+            margin: 48px auto 0;
+            padding: 0 24px;
+        }
+        .casova-osa {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            padding-top: 0;
+        }
+        .osa-linka {
+            position: absolute;
+            top: 13px;
+            left: 14px;
+            right: 14px;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(251,211,4,0.15), rgba(251,211,4,0.5), rgba(251,211,4,0.15));
+        }
+        .osa-bod {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .osa-tecka {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--zluta);
+            border: 3px solid var(--cerna);
+            box-shadow: 0 0 0 3px rgba(251,211,4,0.25);
+            flex-shrink: 0;
+        }
+        .osa-rok {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 22px;
+            color: var(--zluta);
+            margin-top: 12px;
+            letter-spacing: 0.04em;
+        }
+        .osa-popis {
+            font-size: 12px;
+            color: #777;
+            margin-top: 4px;
+            line-height: 1.4;
+            padding: 0 8px;
+        }
+
+        /* ── HESLA CLUSTER (wide pill pod timeline) ── */
+        .hesla-wrap {
+            max-width: 1100px;
+            margin: 24px auto 0;
+            padding: 0 24px 64px;
+        }
+        .hesla-cluster {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        .heslo-karta {
+            background: var(--cerna);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .heslo-karta-header {
+            background: var(--zluta);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .heslo-ikona {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .heslo-karta-nazev {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--cerna);
+            line-height: 1.2;
+        }
+        .heslo-karta-body {
+            padding: 14px 16px;
+            flex: 1;
+        }
+        .heslo-text {
+            font-size: 13px;
+            color: #aaa;
+            line-height: 1.55;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* ── RESPONZIVITA ── */
+        @media (max-width: 900px) {
+            .sluzby-layout { grid-template-columns: 1fr; }
+            .sluzby-obrazek { position: static; order: -1; max-width: 560px; margin: 0 auto 8px; }
+            .onas-inner { grid-template-columns: 1fr; }
+            .onas-foto { order: -1; max-width: 400px; }
+            .pobocky-grid { grid-template-columns: 1fr; }
+            .hesla-cluster { grid-template-columns: 1fr 1fr; }
+            .heslo-karta:nth-child(2) { border-right: none; }
+            .heslo-karta:nth-child(3) { border-top: 1px solid rgba(251,211,4,0.1); }
+            .heslo-karta:nth-child(4) { border-top: 1px solid rgba(251,211,4,0.1); border-right: none; }        }
+        @media (max-width: 640px) {
+            header { padding: 0 14px; height: 56px; }
+            .logo { font-size: 17px; }
+            .nav-pobocka { display: none; }
+            .btn-letak-nav { font-size: 12px; padding: 8px 12px; margin-left: 4px; }
+            .modal-hlavicka { flex-wrap: wrap; gap: 8px; }
+            .sluzby-section { padding: 36px 16px; }
+            .cta-bar { padding: 20px 16px; }
+            .cta-tagline { font-size: 16px; }
+            .btn-hlavni { font-size: 15px; padding: 12px 22px; }
+            .cluster-body { grid-template-columns: 1fr 1fr; gap: 6px; }
+            .onas-timeline-wrap { padding: 0 16px; }
+            .hesla-wrap { padding: 0 16px 48px; }
+            .hesla-cluster { grid-template-columns: 1fr 1fr; }            .kontakt-section { padding: 40px 16px; }
+            .pobocka-body { padding: 16px; }
+        }
+        @media (max-width: 420px) {
+            .hesla-cluster { grid-template-columns: 1fr 1fr; }
+            .cluster-body { grid-template-columns: 1fr; }
+            .osa-rok { font-size: 17px; }
+            .osa-popis { font-size: 11px; padding: 0 3px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── HLAVIČKA ── -->
+<header>
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="logo">Elektro <span>Kadlec</span></a>
+    <nav class="header-nav">
+        <a href="https://www.google.com/maps/search/?api=1&query=Elektro+Kadlec+Prachatice" target="_blank" class="nav-pobocka">
+            <strong>Prachatice</strong>
+            📍 kudy k nám
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Elektro+Kadlec+Vimperk" target="_blank" class="nav-pobocka">
+            <strong>Vimperk</strong>
+            📍 kudy k nám
+        </a>
+        <button class="btn-letak-nav" onclick="otevritLetak()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Akční leták
+        </button>
+    </nav>
+</header>
+
+<!-- ── CTA PÁSKA ── -->
+<div class="cta-bar">
+    <div class="cta-bar-inner">
+        <div class="cta-tagline">Aktuální nabídka a akce</div>
+        <button class="btn-hlavni" onclick="otevritLetak()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Zobrazit akční leták
+        </button>
+    </div>
+</div>
+
+<!-- ── SEKCE SLUŽEB ── -->
+<section class="sluzby-section">
+    <h2 class="sekce-nadpis">Naše <span>služby</span></h2>
+    <p class="sekce-podnadpis">Klikněte na službu a zjistěte více</p>
+
+    <div class="sluzby-layout">
+
+        <!-- LEVÝ SLOUPEC: cluster + karty + detail -->
+        <div class="sluzby-leva">
+            <button class="sluzba-karta" id="btn-zaruka" onclick="aktivujSluzbu('zaruka')">
+                <span class="sluzba-ikona">🛡️</span>
+                <div class="sluzba-texty">
+                    <div class="sluzba-nazev">Prodloužená záruka zdarma</div>
+                    <div class="sluzba-popis-kratky">Až 10 let – zcela zdarma k většině spotřebičů</div>
+                </div>
+                <i class="sluzba-sipka">›</i>
+            </button>
+            <button class="sluzba-karta" id="btn-privezeme" onclick="aktivujSluzbu('privezeme')">
+                <span class="sluzba-ikona">🚚</span>
+                <div class="sluzba-texty">
+                    <div class="sluzba-nazev">Přivezeme</div>
+                    <div class="sluzba-popis-kratky">Vlastní doprava po celém okrese, zdarma nad 5 000 Kč</div>
+                </div>
+                <i class="sluzba-sipka">›</i>
+            </button>
+            <button class="sluzba-karta" id="btn-vyneseme" onclick="aktivujSluzbu('vyneseme')">
+                <span class="sluzba-ikona">🏠</span>
+                <div class="sluzba-texty">
+                    <div class="sluzba-nazev">Vyneseme až do bytu</div>
+                    <div class="sluzba-popis-kratky">I bez výtahu, do libovolného patra</div>
+                </div>
+                <i class="sluzba-sipka">›</i>
+            </button>
+            <button class="sluzba-karta" id="btn-zapojime" onclick="aktivujSluzbu('zapojime')">
+                <span class="sluzba-ikona">🔌</span>
+                <div class="sluzba-texty">
+                    <div class="sluzba-nazev">Zapojíme nový spotřebič</div>
+                    <div class="sluzba-popis-kratky">Pračky, myčky, trouby, TV a další</div>
+                </div>
+                <i class="sluzba-sipka">›</i>
+            </button>
+            <button class="sluzba-karta" id="btn-zlikvidujeme" onclick="aktivujSluzbu('zlikvidujeme')">
+                <span class="sluzba-ikona">♻️</span>
+                <div class="sluzba-texty">
+                    <div class="sluzba-nazev">Ekologická likvidace</div>
+                    <div class="sluzba-popis-kratky">Starý spotřebič odvezeme a ekologicky zlikvidujeme</div>
+                </div>
+                <i class="sluzba-sipka">›</i>
+            </button>
+
+            <!-- DETAIL – rozbaluje se zde, pod kartami -->
+            <div class="detail-sluzby" id="detail-sluzby">
+                <div class="detail-vnitrni">
+                    <div class="detail-text" id="detail-text"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PRAVÝ SLOUPEC: obrázek -->
+        <div class="sluzby-obrazek">
+            <img src="https://www.elektrokadlec.cz/fotky89755/Elektro%20let%C3%A1k%20pro%20e-shop%20duben.png"
+                 alt="Elektro Kadlec – akce dubna"
+                 loading="eager">
+        </div>
+
+    </div>
+</section>
+
+<!-- ── O NÁS ── -->
+<section class="onas-section" id="onas">
+    <!-- Text + foto grid -->
+    <div class="onas-inner">
+        <div class="onas-text">
+            <h2 class="sekce-nadpis">O <span>nás</span></h2>
+            <p class="sekce-podnadpis">Největší kamenný prodejce v okrese Prachatice</p>
+            <p>Prodejní a servisní firma ELEKTRO KADLEC byla založena v roce 1993 a navazuje na servisní činnost, založenou již v roce 1980 Václavem Kadlecem. Jsme největším, tradičním, kamenným prodejcem elektrospotřebičů a elektroniky v okrese Prachatice.</p>
+            <span class="onas-badge">🏆 Jiří Kadlec – Živnostník roku 2019</span>
+        </div>
+        <div class="onas-foto">
+            <img src="https://www.elektrokadlec.cz/fotky89755/o-nas-jirka.jpg" alt="Jiří Kadlec – majitel ELEKTRO KADLEC" loading="lazy">
+        </div>
+    </div>
+
+    <!-- ČASOVÁ OSA – od okraje do okraje -->
+    <div class="onas-timeline-wrap">
+        <div class="casova-osa">
+            <div class="osa-linka"></div>
+            <div class="osa-bod">
+                <div class="osa-tecka"></div>
+                <div class="osa-rok">1980</div>
+                <div class="osa-popis">Václav Kadlec<br>zahajuje servis</div>
+            </div>
+            <div class="osa-bod">
+                <div class="osa-tecka"></div>
+                <div class="osa-rok">1993</div>
+                <div class="osa-popis">Otevření<br>prodejny</div>
+            </div>
+            <div class="osa-bod">
+                <div class="osa-tecka"></div>
+                <div class="osa-rok">2019</div>
+                <div class="osa-popis">Živnostník<br>roku</div>
+            </div>
+            <div class="osa-bod">
+                <div class="osa-tecka"></div>
+                <div class="osa-rok">45+</div>
+                <div class="osa-popis">let zkušeností<br>v oboru</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HESLA – čtyři karty ve stylu pobočkových karet -->
+    <div class="hesla-wrap">
+        <div class="hesla-cluster">
+            <div class="heslo-karta">
+                <div class="heslo-karta-header">
+                    <span class="heslo-ikona">🏪</span>
+                    <div class="heslo-karta-nazev">Kamenná prodejna</div>
+                </div>
+                <div class="heslo-karta-body">
+                    <div class="heslo-text">Přijďte osobně – poradíme vám s výběrem a vše vysvětlíme na místě.</div>
+                </div>
+            </div>
+            <div class="heslo-karta">
+                <div class="heslo-karta-header">
+                    <span class="heslo-ikona">🔧</span>
+                    <div class="heslo-karta-nazev">Vlastní servis</div>
+                </div>
+                <div class="heslo-karta-body">
+                    <div class="heslo-text">Instalace, zapojení i odvoz starého spotřebiče – vše zajistíme přímo u vás.</div>
+                </div>
+            </div>
+            <div class="heslo-karta">
+                <div class="heslo-karta-header">
+                    <span class="heslo-ikona">🤝</span>
+                    <div class="heslo-karta-nazev">Osobní přístup</div>
+                </div>
+                <div class="heslo-karta-body">
+                    <div class="heslo-text">Nejsme anonymní e-shop. Znáte nás jménem, my známe vás a vaše potřeby.</div>
+                </div>
+            </div>
+            <div class="heslo-karta">
+                <div class="heslo-karta-header">
+                    <span class="heslo-ikona">📍</span>
+                    <div class="heslo-karta-nazev">Dvě pobočky</div>
+                </div>
+                <div class="heslo-karta-body">
+                    <div class="heslo-text">Prachatice &amp; Vimperk – vždy blízko vás v celém jižním okrese.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── KONTAKT ── -->
+<section class="kontakt-section" id="kontakt">
+    <h2 class="sekce-nadpis">Kde nás <span>najdete</span></h2>
+    <p class="sekce-podnadpis">Dvě pobočky v jižních Čechách</p>
+
+    <div class="pobocky-grid">
+        <div class="pobocka-karta">
+            <div class="pobocka-header">
+                <span class="pobocka-nazev">📍 Prachatice</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Elektro+Kadlec+Prachatice" target="_blank" class="btn-mapa">Kudy k nám →</a>
+            </div>
+            <div class="pobocka-body">
+                <div class="pobocka-info">
+                    <span class="pobocka-info-icon">🕐</span>
+                    <div>
+                        <strong>Otevírací doba</strong>
+                        Po–Pá: 8:30–17:00<br>So: 8:00–12:00<br>Ne: zavřeno
+                    </div>
+                </div>
+                <a href="mailto:prachatice@elektrokadlec.cz" class="btn-email-pobocka">
+                    ✉️ prachatice@elektrokadlec.cz
+                </a>
+            </div>
+        </div>
+
+        <div class="pobocka-karta">
+            <div class="pobocka-header">
+                <span class="pobocka-nazev">📍 Vimperk</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Elektro+Kadlec+Vimperk" target="_blank" class="btn-mapa">Kudy k nám →</a>
+            </div>
+            <div class="pobocka-body">
+                <div class="pobocka-info">
+                    <span class="pobocka-info-icon">🕐</span>
+                    <div>
+                        <strong>Otevírací doba</strong>
+                        Po–Pá: 8:30–17:00<br>So: 8:00–12:00<br>Ne: zavřeno
+                    </div>
+                </div>
+                <a href="mailto:vimperk@elektrokadlec.cz" class="btn-email-pobocka">
+                    ✉️ vimperk@elektrokadlec.cz
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <p style="margin-top: 40px; margin-bottom: 40px; font-size: 15px; color: var(--text); text-align: center; line-height: 1.7; font-weight: 500;">
+        Náš web prochází proměnou. Mezitím nás najdete v Prachaticích a Vimperku – rádi poradíme.
+    </p>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-logo">Elektro <span>Kadlec</span></div>
+    <div class="footer-copy">© 2025 ELEKTRO KADLEC – Prachatice & Vimperk</div>
+</footer>
+
+<!-- ── MODAL LETÁK ── -->
+<div id="modalLetak">
+    <div class="modal-hlavicka">
+        <span class="modal-titulek">Akční <span>leták</span></span>
+        <div class="modal-zavreni">
+            <button class="btn-modal-kontakt" onclick="document.getElementById('modal-kontakt-bar').scrollIntoView({behavior:'smooth'})">
+                ✉️ Napište nám
+            </button>
+            <button class="btn-zavrit-x" onclick="zavritLetak()" aria-label="Zavřít">×</button>
+        </div>
+    </div>
+
+    <div class="modal-obsah">
+        <div class="letak-stranky">
+            <div class="letak-stranka">
+                <span class="letak-cislo">Strana 1</span>
+                <img src="https://www.elektrokadlec.cz/fotky89755/26.5/Let%C3%A1k%201.png" alt="Leták strana 1" loading="lazy">
+            </div>
+            <div class="letak-stranka">
+                <span class="letak-cislo">Strana 2</span>
+                <img src="https://www.elektrokadlec.cz/fotky89755/26.5/Let%C3%A1k%202.png" alt="Leták strana 2" loading="lazy">
+            </div>
+            <div class="letak-stranka">
+                <span class="letak-cislo">Strana 3</span>
+                <img src="https://www.elektrokadlec.cz/fotky89755/26.5/Let%C3%A1k%203.png" alt="Leták strana 3" loading="lazy">
+            </div>
+            <div class="letak-stranka">
+                <span class="letak-cislo">Strana 4</span>
+                <img src="https://www.elektrokadlec.cz/fotky89755/26.5/Let%C3%A1k%204.png" alt="Leták strana 4" loading="lazy">
+            </div>
+        </div>
+
+        <div class="modal-kontakt-bar" id="modal-kontakt-bar">
+            <h2>Napište nám</h2>
+            <div class="kontakt-tlacitka">
+                <a href="mailto:prachatice@elektrokadlec.cz" class="btn-email-modal">
+                    <div class="btn-email-modal-header">
+                        <span class="btn-email-modal-nazev">📍 Prachatice</span>
+                        <span class="btn-email-modal-hint">Napsat e-mail →</span>
+                    </div>
+                    <div class="btn-email-modal-body">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        prachatice@elektrokadlec.cz
+                    </div>
+                </a>
+                <a href="mailto:vimperk@elektrokadlec.cz" class="btn-email-modal">
+                    <div class="btn-email-modal-header">
+                        <span class="btn-email-modal-nazev">📍 Vimperk</span>
+                        <span class="btn-email-modal-hint">Napsat e-mail →</span>
+                    </div>
+                    <div class="btn-email-modal-body">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        vimperk@elektrokadlec.cz
+                    </div>
+                </a>
+            </div>
+            <button onclick="zavritLetak()" class="btn-zavrit-modal">Zavřít leták</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    var sluzby = {
+        zaruka: {
+            nazev: 'Prodloužená záruka ZDARMA',
+            obsah: '<p>U nás získáte k většině spotřebičů prodlouženou záruku zcela zdarma. A to na 3 roky, 5 nebo až 10 let.</p>'
+        },
+        privezeme: {
+            nazev: 'Přivezeme – naše doprava',
+            obsah: '<p>Zboží vám přivezeme vlastní dopravou po celém okrese Prachatice. Pokud hodnota objednávky přesáhne 5 000 Kč, dopravu máte zdarma. Zboží doručíme až za první uzamykatelné dveře – k hlavnímu vchodu do domu.</p><p>V případě, že si objednáte i instalaci, odpojíme starý spotřebič, nový odborně nainstalujeme a veškerý obalový materiál společně se starým spotřebičem zdarma odvezeme.</p><p>Zdarma je pouze doprava za první uzavíratelné dveře, ostatní služby jsou placené dle aktuálního ceníku.</p>'
+        },
+        vyneseme: {
+            nazev: 'Vyneseme až do bytu',
+            obsah: '<p>Nemusíte se starat o těžké spotřebiče. Pokud si přejete, zajistíme vynesení objednaného zboží až do vašeho bytu nebo domu – ať už bydlíte v přízemí, nebo ve vyšším patře, vyneseme spotřebič i bez výtahu.</p><p>Pokud budete mít zájem, domluvíme vše předem osobně, telefonicky nebo e-mailem.</p>'
+        },
+        zapojime: {
+            nazev: 'Zapojíme nový spotřebič',
+            obsah: '<p>Při dodání vám spotřebič ihned odborně zapojíme. Tuto službu poskytujeme pro všechny větší domácí spotřebiče – pračky, sušičky, myčky, vestavné trouby, varné desky, sporáky, televize...</p><p>Součástí je odpojení starého spotřebiče, instalace nového, odvoz obalového materiálu i starého spotřebiče. Vše provedeme rychle, spolehlivě, bezpečně a bez starostí pro vás.</p>'
+        },
+        zlikvidujeme: {
+            nazev: 'Ekologická likvidace starého spotřebiče',
+            obsah: '<p>Při koupi nového spotřebiče u nás se nemusíte starat o likvidaci toho starého. V rámci dovozu nového vám starý elektrospotřebič zdarma odvezeme a zajistíme jeho ekologickou likvidaci.</p><p>Chceme, aby pro vás výměna spotřebiče byla co nejjednodušší. Nepotřebný přístroj odvezeme a postaráme se o jeho bezpečné zpracování podle platných předpisů.</p>'
+        }
+    };
+
+    var aktivniSluzba = null;
+
+    function aktivujSluzbu(id) {
+        var detail = document.getElementById('detail-sluzby');
+        var text = document.getElementById('detail-text');
+
+        document.querySelectorAll('.sluzba-karta').forEach(function(k) {
+            k.classList.remove('aktivni');
+        });
+
+        if (aktivniSluzba === id) {
+            detail.classList.remove('otevreno');
+            aktivniSluzba = null;
+            return;
+        }
+
+        var data = sluzby[id];
+        if (!data) return;
+
+        text.innerHTML = '<h3>' + data.nazev + '</h3>' + data.obsah;
+
+        var btn = document.getElementById('btn-' + id);
+        if (btn) btn.classList.add('aktivni');
+
+        detail.classList.add('otevreno');
+        aktivniSluzba = id;
+    }
+
+    function otevritLetak() {
+        var modal = document.getElementById('modalLetak');
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        setTimeout(function() { modal.classList.add('otevreno'); }, 10);
+    }
+
+    function zavritLetak() {
+        var modal = document.getElementById('modalLetak');
+        modal.classList.remove('otevreno');
+        setTimeout(function() {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }, 350);
+    }
+
+    window.addEventListener('click', function(e) {
+        if (e.target === document.getElementById('modalLetak')) zavritLetak();
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') zavritLetak();
+    });
+</script>
+</body>
+</html>
